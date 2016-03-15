@@ -1,0 +1,15 @@
+body {
+  background-color: #fff;
+  font-family: 'Merriweather';
+  background-image: url('img/background.jpgg');
+}
+h1 {
+  font-family: "Russo One";
+}
+.karta {
+  background-color: #dce7eb;
+}
+nav ul {
+  list-style: none;
+  text-transform: uppercase;
+}
