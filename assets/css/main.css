@@ -2,7 +2,7 @@ body {
     font-family: "Merriweather";
 
     background-color: #ffffff;
-    background-image: url("img/background.jpgg");
+    background: url(/img/background.jpg);
 }
 
 h1,
@@ -12,6 +12,15 @@ h4,
 h5,
 h6 {
     font-family: "Merriweather";
+}
+
+.container {
+  width: 960px;
+  padding: 0 10px;
+  margin: 0 auto;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 .map {
