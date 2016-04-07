@@ -1,15 +1,36 @@
 body {
-  background-color: #fff;
-  font-family: 'Merriweather';
-  background-image: url('img/background.jpgg');
+    font-family: "Merriweather";
+
+    background-color: #ffffff;
+    background-image: url("img/background.jpgg");
 }
-h1 {
-  font-family: "Russo One";
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Merriweather";
 }
-.karta {
-  background-color: #dce7eb;
+
+.map {
+    background-color: #dce7eb;
 }
+
 nav ul {
-  list-style: none;
-  text-transform: uppercase;
+    list-style: none;
+
+    text-transform: uppercase;
+}
+
+nav {
+    background: #000000;
+}
+nav li {
+    float: left;
+
+    padding: 10 10;
+
+    color: #eeeeee;
 }
