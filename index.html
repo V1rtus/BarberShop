@@ -3,49 +3,122 @@
   <head>
     <meta charset="UTF-8">
     <title>BarberShop</title>
+    <link rel="stylesheet" href="assets/css/reset.css">
     <link rel="stylesheet" href="assets/css/main.css">
-  <link href="https://fonts.googleapis.com/css?family=Merriweather:400,700,900,300&subset=latin,cyrillic" rel="stylesheet" type="text/css">
-  <link href="https://fonts.googleapis.com/css?family=Russo+One&subset=latin,cyrillic" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Merriweather:400,700,900,300&subset=latin,cyrillic,cyrillic-ext' rel='stylesheet' type='text/css'>
   </head>
-  <body>
+  <body class="main-body">
   <!-- header -->
+  <!-- Хедер, он же верхнее навигационное меню -->
   <header>
-    <div class="container">
+    <div class="container"> <!-- Обертка-центровщик -->
       <nav>
         <ul class="menu">
-          <li>Информация</li>
-          <li>Новости</li>
-          <li>Прайс-лист</li>
-          <li>Магазин</li>
-          <li>Контакты</li>
-          <li>Вход</li>
+          <li class="active"><a href="index.html">Главная</a></li>
+          <li><a href="#news">Новости</a></li>
+          <li><a href="price.html">Прайс-лист</a></li>
+          <li><a href="catalog.html">Доставка</a></li>
+          <li><a href="#contacts">Контакты</a></li>
         </ul>
       </nav>
+
+
     </div>
   </header>
   <!-- header -->
 
   <!-- main -->
   <div class="container">
-      <div class="logo">Логотип</div>
-          <h1>Заголовок 1</h1>
-          <p>Первый макет сайта по интенсиву от htmlacademy. Выбор макета еще не сделан, но это основной для тестирования навыков.</p>
+     <main class="main-index">
+         <div class="logo">
+             <a href="index.html">Barbershop Borodinski</a>
+         </div>
 
-    <div class="map">
-      <h2>Заголовок 2</h2>
-        <p>Абсолютно разный текст.</p>
-    </div>
+         <div class="row">
+                <div class="col col4">
+                  <div class="feature">
+                    <a name="info"></a>
+                    <p class="feature-title">Быстро</p>
+                    <p class="feature-description">Мы стараемся выполнять заказ быстро! Вы только нажмете кнопку «Заказать»,а мы уже выполняем ваш заказ.</p>
+                  </div>
+                </div>
+                <div class="col col4">
+                  <div class="feature">
+                    <p class="feature-title">Вкусно</p>
+                    <p class="feature-description">Наши раки питаются исключительно премиум-пищей. Постоянно отдыхают на наших фермах и именно поэтому они такие — вкусные. </p>
+                  </div>
+                </div>
+                <div class="col col4">
+                  <div class="feature">
+                    <p class="feature-title">Дорого</p>
+                    <p class="feature-description">Наши мастера — профессионалы своего дела и не могут стоить дешево. К тому же, разве цена не дает определеный статус?</p>
+                  </div>
+                </div>
+            </div>
 
-    <div class="typograph">
-      <p>Простой текст показывающий различные стайлгайды <strong>усиление семантическое</strong> и после пойдет выделение жирным <b>без семантической важнойсти</b>.</p>
-      <p>Тоже самое можно сказать и о <em>курсе с важностью </em> и после показать нужно обязательно <i>без важности</i></p>
-      <p>Очень интересный пример <mark>метки</mark></p>
+    <section class="index">
+        <div class="row">
 
-      </div>
-  </div>
+
+
+
+        <div class="typograph">
+            <p>Простой текст показывающий различные стайлгайды <strong>усиление семантическое</strong> и после пойдет выделение жирным <b>без семантической важнойсти</b>.</p>
+            <p>Тоже самое можно сказать и о <em>курсе с важностью </em> и после показать нужно обязательно <i>без важности</i></p>
+            <p>Очень интересный пример <mark>метки</mark></p>
+        </div>
+        <div class="no-sites">
+            <i class="icon no-projects"></i>
+                <div class="message">"Хм... а ведь должно же быть что-то тут..."
+                </div>
+
+                
+        </div>
+
+    </div> <!-- row-->
+
+    </section>
+
+    <section class="index">
+     <div class="row">
+
+       <div class="col col5">
+           <a name="news"><h2 class="index-title">Новости</h2></a>
+           <ul class="news">
+             <li><a href="#">Нам наконец завезли ягермайстер! Теперь вы можете пропустить стаканчик во время стрижки</a><span class="date-25sep">25 сентября</span></li>
+             <li><a href="#">В нашей команде пополнение, Борис «Бритва» Стригунец, обладетель множетсва титулов и наград, пополнил наши стройные ряды</a><span class="date-29sep">19 сентября</span></li>
+           </ul>
+           <a class="btn news-btn" href="#">Все новости</a>
+       </div>
+
+       <div class="col col5 offset2 gallery">
+         <h2 class="index-title">Фотогалерея</h2>
+           <div class="interior">
+             <div class="interior-wrapper">
+               <a href="#"><img class="int-photo visible" src="img/interior-1.jpg" height="164" width="286" alt="Интерьер-1"></a>
+               <a href="#"><img class="int-photo" src="img/interior-2.jpg" height="164" width="286" alt="Интерьер-2"></a>
+             </div>
+           </div>
+           <a class="btn prev" href="#">Назад</a>
+           <a class="btn next" href="#">Вперед</a>
+       </div>
+
+     </div>
+   </section>
+
+
+
+  </div> <!-- container -->
+
+
+
+
+
   <!-- main -->
 
   <!-- footer -->
   <!-- footer -->
+
+      </main>
   </body>
 </html>
